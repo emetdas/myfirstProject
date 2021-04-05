@@ -16,6 +16,7 @@
   --white: rgb(255, 255, 255);
   --primary-color: #ff6347;
   --nav-height: 6rem;
+  --linear: linear-gradient(135deg, #a454fd, #2b05df);
 }
 html {
   font-size: 62.5%;
@@ -77,7 +78,7 @@ ol {
 }
 .active-gallery {
   padding: 0.5rem 2rem !important;
-  background: var(--primary-color);
+  background: var(--linear);
   color: var(--white);
   transition: all 0.5s ease;
   -webkit-transition: all 0.5s ease;
@@ -86,7 +87,7 @@ ol {
   -o-transition: all 0.5s ease;
 }
 /* mobile-manue */
-.mobile-icon{
+.mobile-icon {
   width: 3rem;
   background-color: var(--white);
   display: none;
@@ -95,9 +96,9 @@ ol {
   cursor: pointer;
 }
 .mobile-icon::after,
-.mobile-icon::before{
+.mobile-icon::before {
   position: absolute;
-  content: '';
+  content: "";
   width: 100%;
   height: 100%;
   background: currentColor;
@@ -108,35 +109,35 @@ ol {
   -ms-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
 }
-.mobile-icon::before{
+.mobile-icon::before {
   transform: translateY(-1rem);
   -webkit-transform: translateY(-1rem);
   -moz-transform: translateY(-1rem);
   -ms-transform: translateY(-1rem);
   -o-transform: translateY(-1rem);
 }
-.mobile-icon::after{
+.mobile-icon::after {
   transform: translateY(1rem);
   -webkit-transform: translateY(1rem);
   -moz-transform: translateY(1rem);
   -ms-transform: translateY(1rem);
   -o-transform: translateY(1rem);
 }
-.mobile-icon.active::before{
-    transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
+.mobile-icon.active::before {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
 }
-.mobile-icon.active::after{
-    transform:  rotate(-45deg);
-    -webkit-transform:  rotate(-45deg);
-    -moz-transform:  rotate(-45deg);
-    -ms-transform:  rotate(-45deg);
-    -o-transform:  rotate(-45deg);
+.mobile-icon.active::after {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
 }
-.mobile-icon.active{
+.mobile-icon.active {
   background: transparent;
 }
 /* mobile-manue */
@@ -243,11 +244,11 @@ ul li {
     -o-transform: scale(1);
   }
 }
-.grid-item.hide{
+.grid-item.hide {
   opacity: 0;
   display: none;
 }
-.grid-item.show{
+.grid-item.show {
   opacity: 1;
   display: block;
   animation: animte 0.5s ease;
@@ -256,11 +257,11 @@ ul li {
 
 /* Gallery */
 /* meadia-query */
-@media  only screen and (max-width:76.8rem){
-  .container{
+@media only screen and (max-width: 76.8rem) {
+  .container {
     width: 95%;
   }
-  .manue{
+  .manue {
     display: none;
     opacity: 0;
     transition: all 0.5s ease;
@@ -268,11 +269,11 @@ ul li {
     -moz-transition: all 0.5s ease;
     -ms-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
-}
-  .mobile-icon{
+  }
+  .mobile-icon {
     display: block;
   }
-  .mobile-icon.active + .manue{
+  .mobile-icon.active + .manue {
     opacity: 1;
     display: block;
     position: absolute;
@@ -287,7 +288,7 @@ ul li {
     justify-content: center;
     flex-direction: column;
   }
-  .mobile-icon.active + .manue li{
+  .mobile-icon.active + .manue li {
     margin-top: 2rem;
   }
 }

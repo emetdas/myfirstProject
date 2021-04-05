@@ -224,7 +224,7 @@ ul li {
 }
 /* Gallery */
 /* meadia-query */
-@media (max-width:76.8rem){
+@media  only screen and (max-width:76.8rem){
   .container{
     width: 95%;
   }

@@ -222,6 +222,21 @@ ul li {
   height: 30rem;
   object-fit: cover;
 }
+.grid-item{
+  transition: opacity 0.5s ease, display 0.5s ease-in;
+  -webkit-transition: opacity 0.5s ease, display 0.5s ease-in;
+  -moz-transition: opacity 0.5s ease, display 0.5s ease-in;
+  -ms-transition: opacity 0.5s ease, display 0.5s ease-in;
+  -o-transition: opacity 0.5s ease, display 0.5s ease-in;
+}
+.grid-item.show{
+  opacity: 1;
+  display: block;
+}
+.grid-item.hide{
+  opacity: 0;
+  display: none;
+}
 /* Gallery */
 /* meadia-query */
 @media  only screen and (max-width:76.8rem){
